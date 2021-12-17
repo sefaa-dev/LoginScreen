@@ -1,0 +1,48 @@
+<hr />
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mause Control</title>
+    <style>
+      .header {
+        text-align: center;
+        font-family: sans-serif;
+        font-size: 18px;
+        background: pink;
+      }
+      .container {
+        text-align: center;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>1 videoda js</h1>
+    </div>
+    <hr />
+    <div class="container">
+      <p id="para">Paragraf Paragraf</p>
+      <button onmouseover="mauseover()" onmouseout="mauseout()">
+        Tıklar mısınız
+      </button>
+    </div>
+   <script>
+        function mauseover() {
+        var element = document.getElementById("para");
+        element.innerHTML = "Mause over ";
+      }
+
+      function mauseout() {
+        var element = document.getElementById("para");
+        element.innerHTML = "Mause out ";
+      }
+   </script>
+     
+  
+  </body>
+</html>
